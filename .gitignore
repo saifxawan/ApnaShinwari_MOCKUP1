@@ -1,0 +1,6 @@
+# Ignore large design files (>100MB violates GitHub limits)
+*.psd
+
+# OS generated files
+.DS_Store
+Thumbs.db

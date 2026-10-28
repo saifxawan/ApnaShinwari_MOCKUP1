@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" width="520" height="120">
+  <defs>
+    <linearGradient id="flameGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#d32f2f" />
+      <stop offset="50%" stop-color="#f57c00" />
+      <stop offset="100%" stop-color="#ffeb3b" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd54f" />
+      <stop offset="50%" stop-color="#ffb300" />
+      <stop offset="100%" stop-color="#ff8f00" />
+    </linearGradient>
+    <linearGradient id="bowlGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#cfd8dc" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Left Icon: Flame Wok with Crown -->
+  <g transform="translate(15, 8)">
+    <!-- Subtle flame glow -->
+    <circle cx="45" cy="50" r="36" fill="#ff5722" opacity="0.25" filter="url(#glow)"/>
+    
+    <!-- Crown -->
+    <path d="M28 28 L36 36 L45 23 L54 36 L62 28 L58 42 L32 42 Z" fill="url(#goldGrad)" stroke="#b26a00" stroke-width="1"/>
+    <circle cx="28" cy="27" r="2" fill="#ffecb3"/>
+    <circle cx="45" cy="22" r="2.5" fill="#ffecb3"/>
+    <circle cx="62" cy="27" r="2" fill="#ffecb3"/>
+
+    <!-- Flames -->
+    <path d="M45 16 C53 29 63 39 61 53 C59 63 49 67 45 67 C41 67 31 63 29 53 C27 39 37 29 45 16 Z" fill="url(#flameGrad)" filter="url(#glow)"/>
+    <path d="M45 28 C48 36 53 44 51 52 C49 57 44 60 42 60 C40 60 35 57 37 52 C39 45 42 36 45 28 Z" fill="#fff9c4"/>
+
+    <!-- Karahi Wok Bowl -->
+    <path d="M18 57 Q45 83 72 57 Q45 69 18 57 Z" fill="url(#bowlGrad)" stroke="#90a4ae" stroke-width="1.5"/>
+    <!-- Wok Handles -->
+    <path d="M17 58 C10 57 10 64 16 63" fill="none" stroke="#b0bec5" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M73 58 C80 57 80 64 74 63" fill="none" stroke="#b0bec5" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Typography -->
+  <g transform="translate(115, 14)">
+    <!-- Top badge: EXTREME DESI -->
+    <rect x="0" y="0" width="136" height="18" rx="4" fill="#d32f2f"/>
+    <text x="68" y="13" fill="#ffffff" font-family="'Montserrat', sans-serif" font-size="10.5" font-weight="800" letter-spacing="1.8" text-anchor="middle">EXTREME DESI!!</text>
+
+    <!-- Halal Pill Badge -->
+    <rect x="144" y="0" width="84" height="18" rx="4" fill="#1b5e20" stroke="#4caf50" stroke-width="1"/>
+    <text x="186" y="13" fill="#81c784" font-family="'Montserrat', sans-serif" font-size="10" font-weight="800" letter-spacing="1" text-anchor="middle">HALAL حلال</text>
+
+    <!-- APNA -->
+    <text x="0" y="46" fill="#ffd54f" font-family="'Playfair Display', Georgia, serif" font-size="24" font-weight="800" letter-spacing="4" font-style="italic">APNA</text>
+    
+    <!-- SHINWARI -->
+    <text x="0" y="80" fill="#ffffff" font-family="'Montserrat', sans-serif" font-size="34" font-weight="900" letter-spacing="1.5" font-style="italic">SHINWARI</text>
+
+    <!-- PAK-IND RESTAURANT -->
+    <text x="2" y="100" fill="#ffb300" font-family="'Montserrat', sans-serif" font-size="13.5" font-weight="800" letter-spacing="4">PAK-IND RESTAURANT</text>
+  </g>
+</svg>
